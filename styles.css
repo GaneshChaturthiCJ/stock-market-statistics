@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: rgba(255, 255, 255, 0.7) !important; */
+
+  background:
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#aed2f4 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  margin: 0;
+}
+
+.home {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #1b1919;
+  /* background-color: rgb(33 150 243); */
+  background-color: rgb(51 122 183);
+  ;
+  border-radius: 15px;
+  height: 645px;
+  width: 500px;
+}
+
+.heading {
+  width: 90%;
+  min-height: 20px;
+  background-color: #eee;
+  margin: auto;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.heading h1 {
+  line-height: 80px;
+  font-weight: 600;
+
+}
+
+.searchBar {
+  width: 80%;
+  min-height: 250px;
+  background-color: #eee;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 25px;
+  text-align: center;
+  border: 5px solid darkslategrey;
+}
+
+.example i {
+  margin-right: 3px;
+}
+
+.searchBox input {
+  border-radius: 21px 0px 0 0;
+}
+
+.searchBox button {
+  border-radius: 0 20px 0 0;
+}
+
+.buttonParent {
+  margin-top: 20px;
+
+}
+
+.btns {
+  margin: 10px 0px 10px 0px;
+  
+}
+
+
+
+.watchList {
+  height: 280px;
+  width: 80%;
+  margin: auto;
+  background-color: #eee;
+  border-radius: 15px;
+  border-left: 5px solid darkslategrey;
+  border-bottom: 5px solid darkslategrey;
+  border-right: 5px solid darkslategrey;
+
+
+}
+
+.watchListHeading {
+  text-align: center;
+  width: 90%;
+  background-color: rgb(51 122 183);
+  ;
+  margin: 20px auto 20px auto;
+  border-radius: 0px 0 20px 20px;
+
+}
+
+.watchListHeading img {
+  margin-left: 8px;
+  background-color: white;
+  border-radius: 0 15px 0 0;
+}
+
+
+.watchListHeading h1 {
+  line-height: 60px;
+  color: rgb(255, 255, 255);
+
+}
+
+.watchListInner {
+  height: 170px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.watchListInner::-webkit-scrollbar {
+  display: none;
+}
+
+
+.watchListItems {
+  height: 50px;
+  width: 90%;
+  background-color: rgb(51 122 183);
+  ;
+  margin: auto;
+  border-radius: 5px 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  color: #eee;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 29px;
+  cursor: pointer;
+
+}
+
+.btn {
+  color: rgb(246, 194, 194);
+  background-color: rgb(171 10 10);
+  margin-right: 20px;
+}
+
+.watchListEles {
+  color: rgb(232, 232, 213);
+  align-items: center;
+  font-size: large;
+
+
+}
+
+.hidden {
+  display: none;
+}
+
+.timeOption {
+  width: 80%;
+  min-height: 20px;
+  background-color: #eee;
+  margin: auto;
+  border-radius: 25px;
+  text-align: center;
+}
+
+
+
+div.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+div.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: rgb(51 122 183);
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+div.example button:hover {
+  background: #0b7dda;
+}
+
+div.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.modalTbleData {
+  height: 645px;
+  width: 500px;
+  border-radius: 15px;
+  background-color: rgb(51 122 183);
+  ;
+  overflow: auto;
+  border: 3px solid black;
+
+}
+
+.modalTbleData::-webkit-scrollbar {
+  display: none;
+}
+
+.modalHeading h1 {
+  color: #eee;
+  font-weight: 600;
+}
+
+.modalHeading {
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  body {
+    display: block;
+
+  }
+
+  .home {
+    min-width: 70px;
+  }
+}
